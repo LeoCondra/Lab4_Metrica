@@ -6,7 +6,8 @@ public class OrdenadorAleatorio {
         int[] numeros = new int[100];
         Random rand = new Random();
         
-        for (int i = 0; i <= 100; i++) {
+        // Preenchendo o vetor com números aleatórios
+        for (int i = 0; i < 100; i++) { // Correção do índice
             numeros[i] = rand.nextInt(1000); 
         }
 
@@ -15,7 +16,7 @@ public class OrdenadorAleatorio {
 
         // Imprimindo o vetor ordenado
         for (int i = 0; i < numeros.length; i++) {
-            System.out.print(numeros[i] + " ");
+            System.out.println(numeros[i]); // Correção para nova linha
         }
     }
 
